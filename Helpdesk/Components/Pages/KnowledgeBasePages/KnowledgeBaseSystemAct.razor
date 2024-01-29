@@ -1,0 +1,25 @@
+﻿@page "/knowledge-base/system/{Id}/{Action}"
+
+<h1>@Title</h1>
+
+@code {
+    public KnowledgeBaseSystemAct()
+    {
+        if (Convert.ToInt32(Id) == 0)
+        {
+            Title = "Новая система";
+        }
+        else
+        {
+            Title = "Редактирование системы";
+        }
+    }
+
+    [Parameter]
+    public string Id { get; set; } = null!;
+
+    [Parameter]
+    public string? Action { get; set; }
+
+    private string Title { get; set; }
+}
