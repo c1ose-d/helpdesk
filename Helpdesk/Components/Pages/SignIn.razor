@@ -1,0 +1,44 @@
+﻿@page "/sign-in"
+@rendermode InteractiveServer
+
+<PageTitle>Вход - Helpdesk</PageTitle>
+
+<h1>Вход в роль администратора</h1>
+
+<table style="margin: 16px 0" width="100%">
+    <tr>
+        <td width="10%" height="64px">
+            <p>Имя пользователя</p>
+        </td>
+        <td width="50%">
+            <input class="textbox-layout textbox-style textbox-typography" @bind="UserName" />
+        </td>
+    </tr>
+    <tr>
+        <td width="10%" height="64px">
+            <p>Пароль</p>
+        </td>
+        <td width="50%">
+            <input class="textbox-layout textbox-style textbox-typography" @bind="Password" />
+        </td>
+    </tr>
+</table>
+<NavLink href="/">
+    <button class="button-layout button-style" @onclick="TrySignIn">
+        <span class="button-text">Войти</span>
+    </button>
+</NavLink>
+
+@code {
+    public string UserName { get; set; } = "";
+
+    public string Password { get; set; } = "";
+
+    public void TrySignIn(EventArgs e)
+    {
+        if (UserName == Credentials.UserName && Password == Credentials.Password)
+        {
+            Credentials.SignedIn = true;
+        }
+    }
+}

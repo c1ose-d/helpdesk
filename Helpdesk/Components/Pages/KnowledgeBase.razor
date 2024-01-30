@@ -5,26 +5,29 @@
 
 <h1>База знаний</h1>
 
-<NavLink href="/knowledge-base/system/0/add">
-    <button class="button-layout button-style">
-        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; align-self: stretch;">
-            <div style="width: 6rem; height: 0.0625rem;">
-            </div>
-            <div style="display: flex; justify-content: center; align-items: flex-start; gap: 0.5rem;">
-                <div style="display: flex; padding: 0.1875rem 0rem 0.125rem 0rem; flex-direction: column; align-items: flex-start; gap: 0.625rem;">
-                    <span class="button-icon">
-                        &#xE710;
-                    </span>
+@if (Credentials.SignedIn)
+{
+    <NavLink href="/knowledge-base/system/0/add">
+        <button class="button-layout button-style">
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; align-self: stretch;">
+                <div style="width: 6rem; height: 0.0625rem;">
                 </div>
-                <div style="display: flex; padding-bottom: 0.125rem; align-items: center; gap: 0.625rem;">
-                    <span class="button-text">
-                        Добавить
-                    </span>
+                <div style="display: flex; justify-content: center; align-items: flex-start; gap: 0.5rem;">
+                    <div style="display: flex; padding: 0.1875rem 0rem 0.125rem 0rem; flex-direction: column; align-items: flex-start; gap: 0.625rem;">
+                        <span class="button-icon">
+                            &#xE710;
+                        </span>
+                    </div>
+                    <div style="display: flex; padding-bottom: 0.125rem; align-items: center; gap: 0.625rem;">
+                        <span class="button-text">
+                            Добавить
+                        </span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </button>
-</NavLink>
+        </button>
+    </NavLink>
+}
 
 @code {
 

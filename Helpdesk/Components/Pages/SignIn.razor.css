@@ -1,0 +1,107 @@
+﻿h1 {
+    color: rgba(0, 0, 0, 0.90);
+    font-family: 'Segoe UI Variable Display';
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.25rem;
+}
+
+p {
+    color: rgba(0, 0, 0, 0.90);
+    font-feature-settings: 'init' on, 'fina' on;
+    font-family: 'Segoe UI Variable Display';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 0 6px 0;
+    margin: 0;
+}
+
+.textbox-layout {
+    width: 100%;
+    padding: 6px 12px 6px 12px;
+    flex-shrink: 0;
+}
+
+.textbox-style {
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.16);
+    background: rgba(255, 255, 255, 0.70);
+    color: rgba(0, 0, 0, 0.61);
+    font-feature-settings: 'rclt' off;
+    outline: none;
+}
+
+    .textbox-style:hover {
+        border-radius: 3px;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.16);
+        background: rgba(249, 249, 249, 0.50);
+        color: rgba(0, 0, 0, 0.61);
+        font-feature-settings: 'rclt' off;
+    }
+
+    .textbox-style:focus {
+        border-radius: 3px;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        border-bottom: 2px solid #005FB8;
+        background: #FFF;
+        color: rgba(0, 0, 0, 0.61);
+        font-feature-settings: 'rclt' off;
+    }
+
+.textbox-typography {
+    font-family: 'Segoe UI Variable Display';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.button-layout {
+    width: 7.38rem;
+    height: 1.88rem;
+    display: inline-flex;
+    width: 7.38rem;
+    padding: 0.0625rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-style {
+    border-radius: 0.25rem;
+    border: rgba(255, 255, 255, 0.08);
+    background: #005FB8;
+}
+
+    .button-style:hover {
+        border-radius: 0.25rem;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(0, 95, 184, 0.90);
+    }
+
+    .button-style:active {
+        border-radius: 0.25rem;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(0, 95, 184, 0.80);
+    }
+
+    .button-style:hover > .button-text {
+        color: rgba(255, 255, 255, 0.70);
+        text-align: center;
+        font-feature-settings: 'rclt' off;
+    }
+
+.button-text {
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'rclt' off;
+    font-family: 'Segoe UI Variable Display';
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
